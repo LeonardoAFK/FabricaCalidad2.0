@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Búsqueda simple de fórmulas moleculares" skipped="0" tests="1" time="0.14" timestamp="2025-07-14 01:07:00"><testcase name="Buscar fórmulas que contengan la cadena C7"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:903)&#13;
+co.edu.udea.certificacion.busquedas.stepdefinitions.CommonStepDefinitions.queEstoyEnLaPaginaDeBusqueda(CommonStepDefinitions.java:13)&#13;
+✽.que estoy en la página de búsqueda de fórmulas moleculares(file:///C:/Users/leoon/OneDrive/Escritorio/calidad/pruebas/calidadSprint2/src/test/resources/features/moleculas/simple_search.feature:8)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,807 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="es" class=" "&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;style&gt;HTML{margin:0 !important;border:none !important;}.dragdrop-handle{cursor:move;user-select:none;-khtml-user-select:none;-moz-user-select:none;}.B{zoom:1;}.dragdrop-dragging{zoom:normal;}.I{border:1px dashed #1e90ff;margin:0 !important;zoom:1;z-index:100;}.dragdrop-flow-panel-positioner{color:#1e90ff;display:inline;text-align:center;vertical-align:middle;}.dragdrop-proxy{background-color:#7af;}.dragdrop-selected,.dragdrop-dragging,.dragdrop-proxy{filter:alpha(opacity \= 30);opacity:0.3;}.dragdrop-movable-panel{z-index:200;margin:0 !important;border:none !important;}&lt;/style&gt;<br/>
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;&lt;!-- Meta, title, CSS, favicons, etc. --&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;&lt;!-- &lt;link rel="icon" href="recursos/images/icon.png" type="image/ico" /&gt; --&gt;<br/>
+  &lt;title&gt;NPDBEjeCol&lt;/title&gt;<br/>
+  &lt;link href="../../../recursos/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/nprogress/nprogress.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/iCheck/skins/flat/green.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/build/css/custom.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/select2/dist/css/select2.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/switchery/dist/switchery.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/starrr/dist/starrr.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="../../../recursos/cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;&lt;!-- Favicons --&gt;<br/>
+  &lt;link href="img/about-img.jpg" rel="icon"&gt;<br/>
+  &lt;link href="img/apple-touch-icon.png" rel="apple-touch-icon"&gt;&lt;!-- Google Fonts --&gt;<br/>
+  &lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet"&gt;&lt;!-- Bootstrap CSS File --&gt;<br/>
+  &lt;link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;&lt;!-- Libraries CSS Files --&gt;<br/>
+  &lt;link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="lib/animate/animate.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"&gt;<br/>
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"&gt;&lt;!-- Main Stylesheet File --&gt;<br/>
+  &lt;link href="css/style.css" rel="stylesheet"&gt;<br/>
+  &lt;link rel="stylesheet" href="https://www.npdbejecol.com/recursos/vendors/JSME_2023-07-31/jsme/jsa.css"&gt;<br/>
+  &lt;link rel="stylesheet" href="https://www.npdbejecol.com/recursos/vendors/JSME_2023-07-31/jsme/gwt/chrome/chrome.css"&gt;<br/>
+  &lt;link rel="stylesheet" href="https://www.npdbejecol.com/recursos/vendors/JSME_2023-07-31/jsme/gwt/chrome/mosaic.css"&gt;<br/>
+  &lt;script src="https://www.npdbejecol.com/recursos/vendors/JSME_2023-07-31/jsme/FEB169D74546A3B279D22AE09AFB86BD.cache.js"&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4 !important;grid-row:1/4 !important;grid-template-columns:min-content auto min-content;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px rgba(0,0,0,.075),0 1px 2px rgba(0,0,0,.075),1px 2px 4px rgba(0,0,0,.075),1px 3px 8px rgba(0,0,0,.075),2px 4px 16px rgba(0,0,0,.075);pointer-events:all}.swal2-popup.swal2-toast&gt;*{grid-column:2}.swal2-popup.swal2-toast .swal2-title{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-loading{justify-content:center}.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-popup.swal2-toast .swal2-html-container{margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:bold}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.8em;left:-0.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{animation:swal2-toast-hide .1s forwards}div:where(.swal2-container){display:grid;position:fixed;z-index:1060;inset:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);height:100%;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}div:where(.swal2-container).swal2-backdrop-show,div:where(.swal2-container).swal2-noanimation{background:rgba(0,0,0,.4)}div:where(.swal2-container).swal2-backdrop-hide{background:rgba(0,0,0,0) !important}div:where(.swal2-container).swal2-top-start,div:where(.swal2-container).swal2-center-start,div:where(.swal2-container).swal2-bottom-start{grid-template-columns:minmax(0, 1fr) auto auto}div:where(.swal2-container).swal2-top,div:where(.swal2-container).swal2-center,div:where(.swal2-container).swal2-bottom{grid-template-columns:auto minmax(0, 1fr) auto}div:where(.swal2-container).swal2-top-end,div:where(.swal2-container).swal2-center-end,div:where(.swal2-container).swal2-bottom-end{grid-template-columns:auto auto minmax(0, 1fr)}div:where(.swal2-container).swal2-top-start&gt;.swal2-popup{align-self:start}div:where(.swal2-container).swal2-top&gt;.swal2-popup{grid-column:2;place-self:start center}div:where(.swal2-container).swal2-top-end&gt;.swal2-popup,div:where(.swal2-container).swal2-top-right&gt;.swal2-popup{grid-column:3;place-self:start end}div:where(.swal2-container).swal2-center-start&gt;.swal2-popup,div:where(.swal2-container).swal2-center-left&gt;.swal2-popup{grid-row:2;align-self:center}div:where(.swal2-container).swal2-center&gt;.swal2-popup{grid-column:2;grid-row:2;place-self:center center}div:where(.swal2-container).swal2-center-end&gt;.swal2-popup,div:where(.swal2-container).swal2-center-right&gt;.swal2-popup{grid-column:3;grid-row:2;place-self:center end}div:where(.swal2-container).swal2-bottom-start&gt;.swal2-popup,div:where(.swal2-container).swal2-bottom-left&gt;.swal2-popup{grid-column:1;grid-row:3;align-self:end}div:where(.swal2-container).swal2-bottom&gt;.swal2-popup{grid-column:2;grid-row:3;place-self:end center}div:where(.swal2-container).swal2-bottom-end&gt;.swal2-popup,div:where(.swal2-container).swal2-bottom-right&gt;.swal2-popup{grid-column:3;grid-row:3;place-self:end end}div:where(.swal2-container).swal2-grow-row&gt;.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen&gt;.swal2-popup{grid-column:1/4;width:100%}div:where(.swal2-container).swal2-grow-column&gt;.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen&gt;.swal2-popup{grid-row:1/4;align-self:stretch}div:where(.swal2-container).swal2-no-transition{transition:none !important}div:where(.swal2-container) div:where(.swal2-popup){display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0, 100%);width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;color:#545454;font-family:inherit;font-size:1rem}div:where(.swal2-container) div:where(.swal2-popup):focus{outline:none}div:where(.swal2-container) div:where(.swal2-popup).swal2-loading{overflow-y:hidden}div:where(.swal2-container) h2:where(.swal2-title){position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}div:where(.swal2-container) div:where(.swal2-actions){display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:auto;margin:1.25em auto 0;padding:0}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))}div:where(.swal2-container) div:where(.swal2-loader){display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 rgba(0,0,0,0) #2778c4 rgba(0,0,0,0)}div:where(.swal2-container) button:where(.swal2-styled){margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px rgba(0,0,0,0);font-weight:500}div:where(.swal2-container) button:where(.swal2-styled):not([disabled]){cursor:pointer}div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#7066e0;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus{box-shadow:0 0 0 3px rgba(112,102,224,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#dc3741;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus{box-shadow:0 0 0 3px rgba(220,55,65,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#6e7881;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,120,129,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) button:where(.swal2-styled):focus{outline:none}div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-footer){margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:inherit;font-size:1em;text-align:center}div:where(.swal2-container) .swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto !important;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}div:where(.swal2-container) div:where(.swal2-timer-progress-bar){width:100%;height:.25em;background:rgba(0,0,0,.2)}div:where(.swal2-container) img:where(.swal2-image){max-width:100%;margin:2em auto 1em}div:where(.swal2-container) button:where(.swal2-close){z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:rgba(0,0,0,0);color:#ccc;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}div:where(.swal2-container) button:where(.swal2-close):hover{transform:none;background:rgba(0,0,0,0);color:#f27474}div:where(.swal2-container) button:where(.swal2-close):focus{outline:none;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner{border:0}div:where(.swal2-container) .swal2-html-container{z-index:1;justify-content:center;margin:1em 1.6em .3em;padding:0;overflow:auto;color:inherit;font-size:1.125em;font-weight:normal;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea),div:where(.swal2-container) select:where(.swal2-select),div:where(.swal2-container) div:where(.swal2-radio),div:where(.swal2-container) label:where(.swal2-checkbox){margin:1em 2em 3px}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea){box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:rgba(0,0,0,0);box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(0,0,0,0);color:inherit;font-size:1.125em}div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror{border-color:#f27474 !important;box-shadow:0 0 2px #f27474 !important}div:where(.swal2-container) input:where(.swal2-input):focus,div:where(.swal2-container) input:where(.swal2-file):focus,div:where(.swal2-container) textarea:where(.swal2-textarea):focus{border:1px solid #b4dbed;outline:none;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) input:where(.swal2-input)::placeholder,div:where(.swal2-container) input:where(.swal2-file)::placeholder,div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder{color:#ccc}div:where(.swal2-container) .swal2-range{margin:1em 2em 3px;background:#fff}div:where(.swal2-container) .swal2-range input{width:80%}div:where(.swal2-container) .swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}div:where(.swal2-container) .swal2-range input,div:where(.swal2-container) .swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}div:where(.swal2-container) .swal2-input{height:2.625em;padding:0 .75em}div:where(.swal2-container) .swal2-file{width:75%;margin-right:auto;margin-left:auto;background:rgba(0,0,0,0);font-size:1.125em}div:where(.swal2-container) .swal2-textarea{height:6.75em;padding:.75em}div:where(.swal2-container) .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:rgba(0,0,0,0);color:inherit;font-size:1.125em}div:where(.swal2-container) .swal2-radio,div:where(.swal2-container) .swal2-checkbox{align-items:center;justify-content:center;background:#fff;color:inherit}div:where(.swal2-container) .swal2-radio label,div:where(.swal2-container) .swal2-checkbox label{margin:0 .6em;font-size:1.125em}div:where(.swal2-container) .swal2-radio input,div:where(.swal2-container) .swal2-checkbox input{flex-shrink:0;margin:0 .4em}div:where(.swal2-container) label:where(.swal2-input-label){display:flex;justify-content:center;margin:1em auto 0}div:where(.swal2-container) div:where(.swal2-validation-message){align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}div:where(.swal2-container) div:where(.swal2-validation-message)::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}div:where(.swal2-container) .swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:rgba(0,0,0,0);font-weight:600}div:where(.swal2-container) .swal2-progress-steps li{display:inline-block;position:relative}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}div:where(.swal2-icon){position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:0.25em solid rgba(0,0,0,0);border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;user-select:none}div:where(.swal2-icon) .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}div:where(.swal2-icon).swal2-error{border-color:#f27474;color:#f27474}div:where(.swal2-icon).swal2-error .swal2-x-mark{position:relative;flex-grow:1}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-error.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark{animation:swal2-animate-error-x-mark .5s}div:where(.swal2-icon).swal2-warning{border-color:#facea8;color:#f8bb86}div:where(.swal2-icon).swal2-warning.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .5s}div:where(.swal2-icon).swal2-info{border-color:#9de0f6;color:#3fc3ee}div:where(.swal2-icon).swal2-info.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .8s}div:where(.swal2-icon).swal2-question{border-color:#c9dae1;color:#87adbd}div:where(.swal2-icon).swal2-question.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content{animation:swal2-animate-question-mark .8s}div:where(.swal2-icon).swal2-success{border-color:#a5dc86;color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}div:where(.swal2-icon).swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-0.25em;left:-0.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}div:where(.swal2-icon).swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-animate-success-line-tip .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-animate-success-line-long .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right{animation:swal2-rotate-success-circular-line 4.25s ease-in}[class^=swal2]{-webkit-tap-highlight-color:rgba(0,0,0,0)}.swal2-show{animation:swal2-show .3s}.swal2-hide{animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@keyframes swal2-toast-show{0%{transform:translateY(-0.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(0.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0deg)}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-0.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-show{0%{transform:scale(0.7)}45%{transform:scale(1.05)}80%{transform:scale(0.95)}100%{transform:scale(1)}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(0.5);opacity:0}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-0.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(0.4);opacity:0}50%{margin-top:1.625em;transform:scale(0.4);opacity:0}80%{margin-top:-0.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0deg);opacity:1}}@keyframes swal2-rotate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto !important}body.swal2-no-backdrop .swal2-container{background-color:rgba(0,0,0,0) !important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll !important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)&gt;[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static !important}}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:rgba(0,0,0,0);pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{inset:0 auto auto 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{inset:0 0 auto auto}body.swal2-toast-shown .swal2-container.swal2-top-start,body.swal2-toast-shown .swal2-container.swal2-top-left{inset:0 auto auto 0}body.swal2-toast-shown .swal2-container.swal2-center-start,body.swal2-toast-shown .swal2-container.swal2-center-left{inset:50% auto auto 0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{inset:50% auto auto 50%;transform:translate(-50%, -50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{inset:50% 0 auto auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-start,body.swal2-toast-shown .swal2-container.swal2-bottom-left{inset:auto auto 0 0}body.swal2-toast-shown .swal2-container.swal2-bottom{inset:auto auto 0 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{inset:auto 0 0 auto}&lt;/style&gt;<br/>
+  &lt;style&gt;.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4 !important;grid-row:1/4 !important;grid-template-columns:min-content auto min-content;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px rgba(0,0,0,.075),0 1px 2px rgba(0,0,0,.075),1px 2px 4px rgba(0,0,0,.075),1px 3px 8px rgba(0,0,0,.075),2px 4px 16px rgba(0,0,0,.075);pointer-events:all}.swal2-popup.swal2-toast&gt;*{grid-column:2}.swal2-popup.swal2-toast .swal2-title{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-loading{justify-content:center}.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-popup.swal2-toast .swal2-html-container{margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:bold}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.8em;left:-0.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{animation:swal2-toast-hide .1s forwards}div:where(.swal2-container){display:grid;position:fixed;z-index:1060;inset:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);height:100%;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}div:where(.swal2-container).swal2-backdrop-show,div:where(.swal2-container).swal2-noanimation{background:rgba(0,0,0,.4)}div:where(.swal2-container).swal2-backdrop-hide{background:rgba(0,0,0,0) !important}div:where(.swal2-container).swal2-top-start,div:where(.swal2-container).swal2-center-start,div:where(.swal2-container).swal2-bottom-start{grid-template-columns:minmax(0, 1fr) auto auto}div:where(.swal2-container).swal2-top,div:where(.swal2-container).swal2-center,div:where(.swal2-container).swal2-bottom{grid-template-columns:auto minmax(0, 1fr) auto}div:where(.swal2-container).swal2-top-end,div:where(.swal2-container).swal2-center-end,div:where(.swal2-container).swal2-bottom-end{grid-template-columns:auto auto minmax(0, 1fr)}div:where(.swal2-container).swal2-top-start&gt;.swal2-popup{align-self:start}div:where(.swal2-container).swal2-top&gt;.swal2-popup{grid-column:2;place-self:start center}div:where(.swal2-container).swal2-top-end&gt;.swal2-popup,div:where(.swal2-container).swal2-top-right&gt;.swal2-popup{grid-column:3;place-self:start end}div:where(.swal2-container).swal2-center-start&gt;.swal2-popup,div:where(.swal2-container).swal2-center-left&gt;.swal2-popup{grid-row:2;align-self:center}div:where(.swal2-container).swal2-center&gt;.swal2-popup{grid-column:2;grid-row:2;place-self:center center}div:where(.swal2-container).swal2-center-end&gt;.swal2-popup,div:where(.swal2-container).swal2-center-right&gt;.swal2-popup{grid-column:3;grid-row:2;place-self:center end}div:where(.swal2-container).swal2-bottom-start&gt;.swal2-popup,div:where(.swal2-container).swal2-bottom-left&gt;.swal2-popup{grid-column:1;grid-row:3;align-self:end}div:where(.swal2-container).swal2-bottom&gt;.swal2-popup{grid-column:2;grid-row:3;place-self:end center}div:where(.swal2-container).swal2-bottom-end&gt;.swal2-popup,div:where(.swal2-container).swal2-bottom-right&gt;.swal2-popup{grid-column:3;grid-row:3;place-self:end end}div:where(.swal2-container).swal2-grow-row&gt;.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen&gt;.swal2-popup{grid-column:1/4;width:100%}div:where(.swal2-container).swal2-grow-column&gt;.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen&gt;.swal2-popup{grid-row:1/4;align-self:stretch}div:where(.swal2-container).swal2-no-transition{transition:none !important}div:where(.swal2-container) div:where(.swal2-popup){display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0, 100%);width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;color:#545454;font-family:inherit;font-size:1rem}div:where(.swal2-container) div:where(.swal2-popup):focus{outline:none}div:where(.swal2-container) div:where(.swal2-popup).swal2-loading{overflow-y:hidden}div:where(.swal2-container) h2:where(.swal2-title){position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}div:where(.swal2-container) div:where(.swal2-actions){display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:auto;margin:1.25em auto 0;padding:0}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))}div:where(.swal2-container) div:where(.swal2-loader){display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 rgba(0,0,0,0) #2778c4 rgba(0,0,0,0)}div:where(.swal2-container) button:where(.swal2-styled){margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px rgba(0,0,0,0);font-weight:500}div:where(.swal2-container) button:where(.swal2-styled):not([disabled]){cursor:pointer}div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#7066e0;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus{box-shadow:0 0 0 3px rgba(112,102,224,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#dc3741;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus{box-shadow:0 0 0 3px rgba(220,55,65,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#6e7881;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,120,129,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) button:where(.swal2-styled):focus{outline:none}div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-footer){margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:inherit;font-size:1em;text-align:center}div:where(.swal2-container) .swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto !important;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}div:where(.swal2-container) div:where(.swal2-timer-progress-bar){width:100%;height:.25em;background:rgba(0,0,0,.2)}div:where(.swal2-container) img:where(.swal2-image){max-width:100%;margin:2em auto 1em}div:where(.swal2-container) button:where(.swal2-close){z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:rgba(0,0,0,0);color:#ccc;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}div:where(.swal2-container) button:where(.swal2-close):hover{transform:none;background:rgba(0,0,0,0);color:#f27474}div:where(.swal2-container) button:where(.swal2-close):focus{outline:none;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner{border:0}div:where(.swal2-container) .swal2-html-container{z-index:1;justify-content:center;margin:1em 1.6em .3em;padding:0;overflow:auto;color:inherit;font-size:1.125em;font-weight:normal;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea),div:where(.swal2-container) select:where(.swal2-select),div:where(.swal2-container) div:where(.swal2-radio),div:where(.swal2-container) label:where(.swal2-checkbox){margin:1em 2em 3px}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea){box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:rgba(0,0,0,0);box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(0,0,0,0);color:inherit;font-size:1.125em}div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror{border-color:#f27474 !important;box-shadow:0 0 2px #f27474 !important}div:where(.swal2-container) input:where(.swal2-input):focus,div:where(.swal2-container) input:where(.swal2-file):focus,div:where(.swal2-container) textarea:where(.swal2-textarea):focus{border:1px solid #b4dbed;outline:none;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) input:where(.swal2-input)::placeholder,div:where(.swal2-container) input:where(.swal2-file)::placeholder,div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder{color:#ccc}div:where(.swal2-container) .swal2-range{margin:1em 2em 3px;background:#fff}div:where(.swal2-container) .swal2-range input{width:80%}div:where(.swal2-container) .swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}div:where(.swal2-container) .swal2-range input,div:where(.swal2-container) .swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}div:where(.swal2-container) .swal2-input{height:2.625em;padding:0 .75em}div:where(.swal2-container) .swal2-file{width:75%;margin-right:auto;margin-left:auto;background:rgba(0,0,0,0);font-size:1.125em}div:where(.swal2-container) .swal2-textarea{height:6.75em;padding:.75em}div:where(.swal2-container) .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:rgba(0,0,0,0);color:inherit;font-size:1.125em}div:where(.swal2-container) .swal2-radio,div:where(.swal2-container) .swal2-checkbox{align-items:center;justify-content:center;background:#fff;color:inherit}div:where(.swal2-container) .swal2-radio label,div:where(.swal2-container) .swal2-checkbox label{margin:0 .6em;font-size:1.125em}div:where(.swal2-container) .swal2-radio input,div:where(.swal2-container) .swal2-checkbox input{flex-shrink:0;margin:0 .4em}div:where(.swal2-container) label:where(.swal2-input-label){display:flex;justify-content:center;margin:1em auto 0}div:where(.swal2-container) div:where(.swal2-validation-message){align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}div:where(.swal2-container) div:where(.swal2-validation-message)::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}div:where(.swal2-container) .swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:rgba(0,0,0,0);font-weight:600}div:where(.swal2-container) .swal2-progress-steps li{display:inline-block;position:relative}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}div:where(.swal2-icon){position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:0.25em solid rgba(0,0,0,0);border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;user-select:none}div:where(.swal2-icon) .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}div:where(.swal2-icon).swal2-error{border-color:#f27474;color:#f27474}div:where(.swal2-icon).swal2-error .swal2-x-mark{position:relative;flex-grow:1}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-error.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark{animation:swal2-animate-error-x-mark .5s}div:where(.swal2-icon).swal2-warning{border-color:#facea8;color:#f8bb86}div:where(.swal2-icon).swal2-warning.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .5s}div:where(.swal2-icon).swal2-info{border-color:#9de0f6;color:#3fc3ee}div:where(.swal2-icon).swal2-info.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .8s}div:where(.swal2-icon).swal2-question{border-color:#c9dae1;color:#87adbd}div:where(.swal2-icon).swal2-question.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content{animation:swal2-animate-question-mark .8s}div:where(.swal2-icon).swal2-success{border-color:#a5dc86;color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}div:where(.swal2-icon).swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-0.25em;left:-0.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}div:where(.swal2-icon).swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-animate-success-line-tip .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-animate-success-line-long .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right{animation:swal2-rotate-success-circular-line 4.25s ease-in}[class^=swal2]{-webkit-tap-highlight-color:rgba(0,0,0,0)}.swal2-show{animation:swal2-show .3s}.swal2-hide{animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@keyframes swal2-toast-show{0%{transform:translateY(-0.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(0.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0deg)}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-0.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-show{0%{transform:scale(0.7)}45%{transform:scale(1.05)}80%{transform:scale(0.95)}100%{transform:scale(1)}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(0.5);opacity:0}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-0.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(0.4);opacity:0}50%{margin-top:1.625em;transform:scale(0.4);opacity:0}80%{margin-top:-0.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0deg);opacity:1}}@keyframes swal2-rotate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto !important}body.swal2-no-backdrop .swal2-container{background-color:rgba(0,0,0,0) !important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll !important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)&gt;[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static !important}}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:rgba(0,0,0,0);pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{inset:0 auto auto 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{inset:0 0 auto auto}body.swal2-toast-shown .swal2-container.swal2-top-start,body.swal2-toast-shown .swal2-container.swal2-top-left{inset:0 auto auto 0}body.swal2-toast-shown .swal2-container.swal2-center-start,body.swal2-toast-shown .swal2-container.swal2-center-left{inset:50% auto auto 0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{inset:50% auto auto 50%;transform:translate(-50%, -50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{inset:50% 0 auto auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-start,body.swal2-toast-shown .swal2-container.swal2-bottom-left{inset:auto auto 0 0}body.swal2-toast-shown .swal2-container.swal2-bottom{inset:auto auto 0 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{inset:auto 0 0 auto}&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;button type="button" class="mobile-nav-toggle d-lg-none"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/button&gt; &lt;!--==========================<br/>
+  Header<br/>
+  ============================--&gt;<br/>
+  &lt;header id="header"&gt;<br/>
+   &lt;div class="container"&gt;<br/>
+    &lt;div class="logo float-left"&gt;&lt;!-- Uncomment below if you prefer to use an image logo --&gt; &lt;a href="" class="scrollto" style="padding-right:10px;"&gt;&lt;img src="img/seed.png" alt="" class="img-fluid"&gt;&lt;/a&gt;<br/>
+     &lt;h1 class="text-light"&gt;&lt;a href="" class="scrollto"&gt;&lt;span&gt;NPDBEjeCol&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;nav class="main-nav float-right d-none d-lg-block"&gt;<br/>
+     &lt;ul&gt;<br/>
+      &lt;li class="active"&gt;&lt;a href="#intro"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#about"&gt;About The Project&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#documentation"&gt;Documentation&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#footer"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="https://npdbejecol.com/vista/seguridad/login/login.vista.php"&gt;Login&lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;/ul&gt;<br/>
+    &lt;/nav&gt;&lt;!-- .main-nav --&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/header&gt;&lt;!-- #header --&gt; &lt;!--==========================<br/>
+    Intro Section<br/>
+  ============================--&gt;<br/>
+  &lt;section id="intro" class="clearfix"&gt;<br/>
+   &lt;div class="container"&gt;<br/>
+    &lt;div class="row justify-content-start align-self-start"&gt;<br/>
+     &lt;div class="col-md-12 intro-info order-md-first order-last"&gt;&lt;br&gt;&lt;br&gt;<br/>
+      &lt;div class="container mt-5 mb-5"&gt;<br/>
+       &lt;div class="row justify-content-center"&gt;<br/>
+        &lt;div class="col-md-8"&gt;<br/>
+         &lt;div class="card mb-4"&gt;<br/>
+          &lt;div class="card-body d-flex justify-content-between align-items-center"&gt;&lt;button class="btn btn-light" style="padding:2%;"&gt;&lt;a href=""&gt;&lt;i class="fa fa-search" style="padding-right:10px;"&gt;&lt;/i&gt;Simple Search&lt;/a&gt;&lt;/button&gt; &lt;button class="btn btn-light" style="padding:2%;"&gt;&lt;a href="#" onclick="busquedaSpecificSearch()"&gt; &lt;i class="fa fa-binoculars" style="padding-right:10px;"&gt;&lt;/i&gt;Specific Search&lt;/a&gt; &lt;/button&gt; &lt;button class="btn btn-light" style="padding:2%;"&gt;&lt;a href="#" onclick="busquedaSmiles()"&gt;&lt;i class="fa  fa-smile-o"&gt;&lt;/i&gt; Smiles Search&lt;/a&gt; &lt;/button&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-body"&gt;<br/>
+           &lt;div class="input-group"&gt;&lt;input onkeyup="onKeyUp(event)" type="text" id="claves" name="claves" class="form-control" placeholder="Please, write the molecular formula here" aria-label="Search compound"&gt; &lt;button class="btn btn-secondary" style="background:#1bb1dc;" onclick="busquedaUniversal(document.getElementById('claves').value)" type="button"&gt;Search&lt;/button&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;&lt;!--no se que hace esta linea, pero no eliminarla --&gt; &lt;span id="msjResult"&gt;<br/>
+       &lt;div class="container body"&gt;<br/>
+        &lt;div class="main_container"&gt;&lt;!-- page content -----------------------------------------------------------&gt;<br/>
+         &lt;div class="right_col" role="main"&gt;<br/>
+          &lt;div class=""&gt;<br/>
+           &lt;div class="page-title"&gt;<br/>
+            &lt;div class="title_left" style="padding-left: 2%;padding-top: 8px;"&gt;<br/>
+             &lt;h5&gt;Specific search&lt;/h5&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="clearfix"&gt;&lt;/div&gt;<br/>
+           &lt;div class="row"&gt;<br/>
+            &lt;div class="col-md-12 col-sm-12 "&gt;<br/>
+             &lt;div class="x_panel"&gt;<br/>
+              &lt;div class="x_content"&gt;<br/>
+               &lt;form id="demo-form" data-parsley-validate=""&gt;&lt;!-- &lt;form name= "busqueda" id="busqueda" data-parsley-validate class="form-horizontal form-label-left"&gt; --&gt;<br/>
+               &lt;/form&gt;<br/>
+               &lt;form class="form-label-left input_mask"&gt;<br/>
+                &lt;div class="form-group row"&gt;&lt;label class="col-form-label col-md-3 col-sm-3 "&gt;Please select a specific field:&lt;/label&gt;<br/>
+                 &lt;div class="col-md-9 col-sm-9 "&gt;&lt;select id="campoBusqueda" onchange="obtenerOperador(document.getElementById('campoBusqueda').value)" name="campoBusqueda" class="js-example-basic-single form-control select2-hidden-accessible" style="width:100%;" tabindex="-1" aria-hidden="true"&gt; &lt;option value="None"&gt;Please choose an option:&lt;/option&gt; &lt;option value="ID"&gt;ID: Consecutive number of compound&lt;/option&gt;&lt;option value="ID_MOLECULA"&gt;ID_MOLECULA: Molecular identification number database&lt;/option&gt;&lt;option value="STRUCTURE_SMILES"&gt;STRUCTURE_SMILES: Chemical substance identifier: SMILES online notation&lt;/option&gt;&lt;option value="PNDBCOL_ID"&gt;PNDBCOL_ID: Molecule identification number database Colombia&lt;/option&gt;&lt;option value="INCHI"&gt;INCHI: Chemical substance identifier: InChi online notation&lt;/option&gt;&lt;option value="INCHI_KEY"&gt;INCHI_KEY: Chemical Substance Identifier (InChi Key Online Notation)&lt;/option&gt;&lt;option value="DEEP_SMILES"&gt;DEEP_SMILES: Chemical Substance Identifier: Deep SMILES Online Notation&lt;/option&gt;&lt;option value="SUGAR_FREE_SMILES"&gt;SUGAR_FREE_SMILES: Chemical substance identifier: SMILES online notation without sugars. Deglycosylated natural product&lt;/option&gt;&lt;option value="MOLECULAR_FORMULA"&gt;MOLECULAR_FORMULA: Molecular formula&lt;/option&gt;&lt;option value="MOLECULAR_WEIGHT"&gt;MOLECULAR_WEIGHT: Molecular weight of natural product&lt;/option&gt;&lt;option value="CITATIONDOI"&gt;CITATIONDOI: Digital Object Identifier: Identifies the online publication where the natural product is reported&lt;/option&gt;&lt;option value="TEXTTAXA"&gt;TEXTTAXA: Scientific name of the organism that produces the compound&lt;/option&gt;&lt;option value="TIPTAXA"&gt;TIPTAXA: Type of organism that produces the compound&lt;/option&gt;&lt;option value="NAME"&gt;NAME: Common name of the natural product&lt;/option&gt;&lt;option value="IUPAC_NAME"&gt;IUPAC_NAME: IUPAC name of natural product&lt;/option&gt;&lt;option value="SYNONYMSNAME"&gt;SYNONYMSNAME: Synonyms for the name of the natural product&lt;/option&gt;&lt;option value="CAS_REGISTRY_NUMBER"&gt;CAS_REGISTRY_NUMBER: CAS registration number: Chemical Abstracts Service identifier&lt;/option&gt;&lt;option value="NPL_SCORE"&gt;NPL_SCORE: Natural product similarity score: Bayesian measure that determines how similar molecules are to the structural space covered by natural products&lt;/option&gt;&lt;option value="NUMBER_OF_CARBONS"&gt;NUMBER_OF_CARBONS: Total number of carbons of the natural product.&lt;/option&gt;&lt;option value="NUMBER_OF_NITROGENS"&gt;NUMBER_OF_NITROGENS: Total number of nitrogen in the natural product&lt;/option&gt;&lt;option value="NUMBER_OF_OXYGENS"&gt;NUMBER_OF_OXYGENS: Total number of oxygens of the natural product&lt;/option&gt;&lt;option value="NUMBER_OF_RINGS"&gt;NUMBER_OF_RINGS: Total number of rings present in the natural product&lt;/option&gt;&lt;option value="TOTAL_ATOM_NUMBER"&gt;TOTAL_ATOM_NUMBER: Total number of atoms of the natural product&lt;/option&gt;&lt;option value="BOND_COUNT"&gt;BOND_COUNT: Number of bonds in the molecule&lt;/option&gt;&lt;option value="FOUND_IN_DATABASES"&gt;FOUND_IN_DATABASES: List of data sources containing the natural product&lt;/option&gt;&lt;option value="MURKO_FRAMEWORK"&gt;MURKO_FRAMEWORK: Bemis-Murcko framework: displays scaffolds from molecules by removing side-chain atoms&lt;/option&gt;&lt;option value="ALOGP"&gt;ALOGP: The octanol-water partition coefficient (ALogP) by Ghose-Crippen-Viswanadhan is calculated from a regression equation based on the hydrophobicity contribution of 120 types of atoms&lt;/option&gt;&lt;option value="ALOGP2"&gt;ALOGP2: The square of the octanol-water partition coefficient (ALogP) by Ghose-Crippen-Viswanadhan &lt;/option&gt;&lt;option value="AMRALOGP"&gt;AMRALOGP: The Ghose-Crippen molar refractivity is measured from the total polarizability of one mole of a substance, dependent on temperature, refractive index, and pressure&lt;/option&gt;&lt;option value="TYPE_REPORT"&gt;TYPE_REPORT: Type of report (book, article, degree work)&lt;/option&gt;&lt;option value="APOL"&gt;APOL: Sum of atomic polarizabilities, including implicit hydrogens&lt;/option&gt;&lt;option value="BCUTDESCRIPTOR"&gt;BCUTDESCRIPTOR: Descriptor basado en valores propios destacado por su utilidad en la diversidad química descrito por Pearlman et al. (1999)&lt;/option&gt;&lt;option value="BPOL"&gt;BPOL: Enlaces polarizables, calcula la suma del valor absoluto de la diferencia entre las polarizabilidades atómicas de todos los átomos enlazados en la molécula (incluidos los hidrógenos implícitos).&lt;/option&gt;&lt;option value="ECCENTRICCONNECTIVITYINDEXDESCRIPTOR"&gt;ECCENTRICCONNECTIVITYINDEXDESCRIPTOR: Índice de conectividad excéntrica es un descriptor de estructura química que se utiliza para modelar las actividades biológicas de un compuesto químico.&lt;/option&gt;&lt;option value="ERTLFUNTIONALFRAGMENTS"&gt;ERTLFUNTIONALFRAGMENTS: Grupos funcionales detectados y extraidos de moleculas orgánicas por algortimo Ertl &lt;/option&gt;&lt;option value="ERTLFUNCTIONALFRAGMENTSPSEUDOSMILES"&gt;ERTLFUNCTIONALFRAGMENTSPSEUDOSMILES: Grupos funcionales detectados y extraidos de moleculas orgánicas por algortimo Ertl representados como pseudo cadenas SMILES con átomos aromáticos marcados por un asterisco y pseudo-átomos indicados por R&lt;/option&gt;&lt;option value="FMFDESCRIPTOR"&gt;FMFDESCRIPTOR: Descriptor FMF. Aproximación para caracterizar la complejidad molecular basada en el andamio de Murcko presente en la molécula. El descriptor es la relación entre los átomos pesados ​​en el andamio y el número total de átomos pesados ​​en la molécula.&lt;/option&gt;&lt;option value="PUBLISHER"&gt;PUBLISHER: Publicador: el documento donde se reporta el producto natural esta publicado&lt;/option&gt;&lt;option value="FRAGMENTS"&gt;FRAGMENTS: Lista de fragmentos circulares (firmas moleculares) del Producto natural desglicosilado&lt;/option&gt;&lt;option value="FRAGMENTSWITHSUGAR"&gt;FRAGMENTSWITHSUGAR: Lista de fragmentos circulares (firmas moleculares) del Producto natural completo&lt;/option&gt;&lt;option value="FSP3"&gt;FSP3: Fracción de átomos de carbonos sp3 (número de carbonos hibridados sp3/recuento total de carbonos)&lt;/option&gt;&lt;option value="FRAGMENTCOMPLEXITYDESCRIPTOR"&gt;FRAGMENTCOMPLEXITYDESCRIPTOR: Descriptor de complejidad de fragmentos. La complejidad se define como C=abs(B^2-A^2+A)+H/100 (donde C=complejidad, A=número de átomos que no son hidrógeno, B=número de enlaces y H=número de heteroátomos)&lt;/option&gt;&lt;option value="GEOLOCATION"&gt;GEOLOCATION: Lista de continentes y regiones donde se encuentra el organismo productor del producto natural&lt;/option&gt;&lt;option value="GRAVITATIONALINDEXHEAVYATOMS"&gt;GRAVITATIONALINDEXHEAVYATOMS: Índice gravitacional: medida de la distribución espacial de las masas en la molécula (solo átomos pesados)&lt;/option&gt;&lt;option value="HBONDACCEPTORCOUNT"&gt;HBONDACCEPTORCOUNT: Hydrogen bond acceptor count&lt;/option&gt;&lt;option value="HBONDDONORCOUNT"&gt;HBONDDONORCOUNT: Hydrogen bond donor count&lt;/option&gt;&lt;option value="HYBRIDIZATIONRATIODESCRIPTOR"&gt;HYBRIDIZATIONRATIODESCRIPTOR: Descriptor de relación de hibridación (fracción de carbonos sp3 a carbonos sp2)&lt;/option&gt;&lt;option value="KAPPASHAPEINDEX1"&gt;KAPPASHAPEINDEX1: Primer índice de forma kappa&lt;/option&gt;&lt;option value="KAPPASHAPEINDEX2"&gt;KAPPASHAPEINDEX2: Segundo índice de forma kappa&lt;/option&gt;&lt;option value="KAPPASHAPEINDEX3"&gt;KAPPASHAPEINDEX3: Tercer índice de forma kappa&lt;/option&gt;&lt;option value="PETITJEANNUMBER"&gt;PETITJEANNUMBER: Número de Petitjean de una Molécula: la excentricidad de un vértice corresponde a la distancia de ese vértice al vértice más alejado del gráfico.&lt;/option&gt;&lt;option value="PETITJEANSHAPEGEOM"&gt;PETITJEANSHAPEGEOM: Índice de formas geométricas de Petitjean. Un descriptor que refleja la forma del gráfico de conectividad molecular y factores en la información de distancia.&lt;/option&gt;&lt;option value="PETITJEANSHAPETOPO"&gt;PETITJEANSHAPETOPO: Índice de formas topológicas de Petitjean. Un descriptor que refleja la forma topológica del gráfico molecular.&lt;/option&gt;&lt;option value="PUBCHEMFINGERPRINT"&gt;PUBCHEMFINGERPRINT: Huella digital de PubChem: contiene 881 bitsque indican la presencia o ausencia de un determinado grupo de características químicas en un compuesto&lt;/option&gt;&lt;option value="LIPINSKIRULEOF5FAILURES"&gt;LIPINSKIRULEOF5FAILURES: Número de fallas en la regla de Lipinski de 5&lt;/option&gt;&lt;option value="MANHOLDLOGP"&gt;MANHOLDLOGP: Descriptor LogP. Coeficiente de partición octanol-agua (Método de Mannhold)&lt;/option&gt;&lt;option value="NPL_SUGAR_SCORE"&gt;NPL_SUGAR_SCORE: Puntuación de semejanza del producto natural, medida bayesiana que permite determinar cómo las moléculas son similares al espacio estructural cubierto por los productos naturales (molécula glicolisada).&lt;/option&gt;&lt;option value="AROMATIC_ATOM_COUNT"&gt;AROMATIC_ATOM_COUNT: Número de átomos aromáticos en una molécula dada.&lt;/option&gt;&lt;option value="ATOMIC_POLARIZABILITY"&gt;ATOMIC_POLARIZABILITY: Suma de polarizabilidades atómicas de todos los átomos en una molécula dada.&lt;/option&gt;&lt;option value="NUMBERSPIROATOMS"&gt;NUMBERSPIROATOMS: Número de átomos espiro. Átomo común en una "unión espiro" aquella formada por un solo átomo que es el único miembro común de dos anillos.&lt;/option&gt;&lt;option value="WIENERPATHNUMBER"&gt;WIENERPATHNUMBER: Índice de Viena. La suma de las longitudes de los caminos más cortos entre todos los pares de vértices en el gráfico químico que representa los átomos que no son hidrógeno en la molécula.&lt;/option&gt;&lt;option value="XLOGP"&gt;XLOGP: XLogP. Predicción de logP basada en el método del tipo de átomo.&lt;/option&gt;&lt;option value="ZAGREBINDEX"&gt;ZAGREBINDEX: Índice de Zagreb. La suma de los cuadrados de todos los grados de los átomos pesados.&lt;/option&gt;&lt;option value="TOPOPSA"&gt;TOPOPSA: Descriptor de área de superficie polar topológica&lt;/option&gt;&lt;option value="TAXID"&gt;TAXID: Lista de identificadores de taxonomía NCBI de organismos que producen el producto natural&lt;/option&gt;&lt;option value="PT_ION"&gt;PT_ION: Potencial de ionización: Propensión de una molécula dada a perder un electrón&lt;/option&gt;&lt;option value="LARGESTCHAIN"&gt;LARGESTCHAIN: Descriptor de cadena más grande&lt;/option&gt;&lt;option value="VABCDESCRIPTOR"&gt;VABCDESCRIPTOR: Descriptor de volumen: muestra los valores derivados del método Volumen de van der Waals como suma de contribuciones atómicas y de enlaces que se basa en contribuciones grupales.&lt;/option&gt;&lt;option value="VERTEXADJMAGNITUDE"&gt;VERTEXADJMAGNITUDE: Información de adyacencia de vértice (magnitud): 1+logm2 donde m es el número de enlaces pesados-pesados&lt;/option&gt;&lt;option value="CONTAINS_LINEAR_SUGARS"&gt;CONTAINS_LINEAR_SUGARS: Presencia de azucares lineales en el producto natural&lt;/option&gt;&lt;option value="CONTAINS_RING_SUGARS"&gt;CONTAINS_RING_SUGARS: Presencia de azucares anulares en el producto natural&lt;/option&gt;&lt;option value="CONTAINS_SUGAR"&gt;CONTAINS_SUGAR: Presencia de fracciones de azucares en el producto natural&lt;/option&gt;&lt;option value="SPECTRUM"&gt;SPECTRUM: Espectroscopia: Cuenta con información Espectroscopica&lt;/option&gt;&lt;option value="DATA_13C"&gt;DATA_13C: Espectro RMN 13C&lt;/option&gt;&lt;option value="DATA_15N"&gt;DATA_15N: Espectro RMN 15N&lt;/option&gt;&lt;option value="DATA_19_F"&gt;DATA_19_F: Espectro RMN 19F&lt;/option&gt;&lt;option value="DATA_1H"&gt;DATA_1H: Espectro RMN 1H&lt;/option&gt;&lt;option value="DATA_29_SI"&gt;DATA_29_SI: Espectro RMN 29Si&lt;/option&gt;&lt;option value="DATA_31P"&gt;DATA_31P: Espectro RMN 31P&lt;/option&gt;&lt;option value="DATA_CURVE"&gt;DATA_CURVE: Curva espectrofotométrica&lt;/option&gt;&lt;option value="DATA_FIR"&gt;DATA_FIR: Espectro IR&lt;/option&gt;&lt;option value="DATA_GC"&gt;DATA_GC: Cromatograma de gases&lt;/option&gt;&lt;option value="DATA_HPLC"&gt;DATA_HPLC: Cromatograma HPLC/UPLC&lt;/option&gt;&lt;option value="DATA_MASS"&gt;DATA_MASS: Espectro de masas&lt;/option&gt;&lt;option value="DATA_OTHER"&gt;DATA_OTHER: Otro espectro/análisis&lt;/option&gt;&lt;option value="DATA_XRAY"&gt;DATA_XRAY: Espectro de rayos X&lt;/option&gt;&lt;option value="TOX"&gt;TOX: Descriptor de toxicología 1&lt;/option&gt;&lt;option value="TOX_2"&gt;TOX_2: Descriptor de toxicología 2&lt;/option&gt;&lt;option value="TOX_3"&gt;TOX_3: Descriptor de toxicología 3&lt;/option&gt;&lt;option value="ID"&gt;ID: Consecutive molecule number.&lt;/option&gt;&lt;option value="ID_MOLECULA"&gt;ID_MOLECULA: Molecule database identification number.&lt;/option&gt;&lt;option value="STRUCTURE_SMILES"&gt;STRUCTURE_SMILES: Chemical substance identifier (SMILES online notation).&lt;/option&gt;&lt;option value="PNDBCOL_ID"&gt;PNDBCOL_ID: Molecule identification number database Colombia&lt;/option&gt;&lt;option value="INCHI"&gt;INCHI: Chemical Substance Identifier (InChi Online Notation)&lt;/option&gt;&lt;option value="INCHI_KEY"&gt;INCHI_KEY: Chemical Substance Identifier (InChi Key Online Notation)&lt;/option&gt;&lt;option value="DEEP_SMILES"&gt;DEEP_SMILES: Chemical substance identifier (deep SMILES online notation)&lt;/option&gt;&lt;option value="SUGAR_FREE_SMILES"&gt;SUGAR_FREE_SMILES: Chemical substance identifier (SMILES online notation without sugars) Deglycosylated natural product&lt;/option&gt;&lt;option value="MOLECULAR_FORMULA"&gt;MOLECULAR_FORMULA: Molecular formula&lt;/option&gt;&lt;option value="MOLECULAR_WEIGHT"&gt;MOLECULAR_WEIGHT: Molecular weight of the natural product&lt;/option&gt;&lt;option value="CITATIONDOI"&gt;CITATIONDOI: Digital Object Identifier (Identifies online publication where the natural product is reported&lt;/option&gt;&lt;option value="TEXTTAXA"&gt;TEXTTAXA: Organism that produces the natural product (Scientific name)&lt;/option&gt;&lt;option value="TIPTAXA"&gt;TIPTAXA: Type of organism that produces the natural product&lt;/option&gt;&lt;option value="NAME"&gt;NAME: Common name of the natural product&lt;/option&gt;&lt;option value="IUPAC_NAME"&gt;IUPAC_NAME: IUPAC name of the natural product.&lt;/option&gt;&lt;option value="SYNONYMSNAME"&gt;SYNONYMSNAME: Synonyms for natural product name.&lt;/option&gt;&lt;option value="CAS_REGISTRY_NUMBER"&gt;CAS_REGISTRY_NUMBER: CAS Registry Number is a unique and unambiguous identifier for a specific substance.&lt;/option&gt;&lt;option value="NPL_SCORE"&gt;NPL_SCORE: Natural product-likeness score a Bayesian measure which allows for the determination of how molecules are similar to the structural space covered by natural products (molecule).&lt;/option&gt;&lt;option value="NUMBER_OF_CARBONS"&gt;NUMBER_OF_CARBONS: Total number of carbons.&lt;/option&gt;&lt;option value="NUMBER_OF_NITROGENS"&gt;NUMBER_OF_NITROGENS: Total number of nitrogens.&lt;/option&gt;&lt;option value="NUMBER_OF_OXYGENS"&gt;NUMBER_OF_OXYGENS: Total number of oxygens.&lt;/option&gt;&lt;option value="NUMBER_OF_RINGS"&gt;NUMBER_OF_RINGS: Total number of rings present in the natural product.&lt;/option&gt;&lt;option value="TOTAL_ATOM_NUMBER"&gt;TOTAL_ATOM_NUMBER: Total number of atoms of the natural product.&lt;/option&gt;&lt;option value="BOND_COUNT"&gt;BOND_COUNT: Number of bonds in the molecule.&lt;/option&gt;&lt;option value="FOUND_IN_DATABASES"&gt;FOUND_IN_DATABASES: List of data sources containing the natural product.&lt;/option&gt;&lt;option value="MURKO_FRAMEWORK"&gt;MURKO_FRAMEWORK: Bemis-Murcko framework, shows scaffolding from molecules by removing atoms from side chains.&lt;/option&gt;&lt;option value="ALOGP"&gt;ALOGP: Ghose-Crippen-Viswanadhan octanol-water partition coefficient (ALogP) is calculated from a regression equation based on the hydrophobicity contribution of 120 atom types.&lt;/option&gt;&lt;option value="ALOGP2"&gt;ALOGP2: Ghose-Crippen-Viswanadhan squared octanol-water fraction coefficient (ALogP)&lt;/option&gt;&lt;option value="AMRALOGP"&gt;AMRALOGP: AMR— GhoseCrippen molar refractivity is a measure of the total polarizability of one mole of a substance dependent on temperature, refractive index, and pressure.&lt;/option&gt;&lt;option value="TYPE_REPORT"&gt;TYPE_REPORT: Type of report (book, article, degree project)&lt;/option&gt;&lt;option value="APOL"&gt;APOL: Sum of the atomic polarizabilities (including implicit hydrogens)&lt;/option&gt;&lt;option value="BCUTDESCRIPTOR"&gt;BCUTDESCRIPTOR: Eigenvalue based descriptor noted for its utility in chemical diversity described by Pearlman et al. (1999)&lt;/option&gt;&lt;option value="BPOL"&gt;BPOL: Bond polarizabilities, calculates the sum of the absolute value of the difference between the atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens).&lt;/option&gt;&lt;option value="ECCENTRICCONNECTIVITYINDEXDESCRIPTOR"&gt;ECCENTRICCONNECTIVITYINDEXDESCRIPTOR: Eccentric connectivity index is a chemical structure descriptor that is being used for the modeling of biological activities of a chemical compound.&lt;/option&gt;&lt;option value="ERTLFUNTIONALFRAGMENTS"&gt;ERTLFUNTIONALFRAGMENTS: Functional groups detected and extracted from organic molecules by Ertl algorithm.&lt;/option&gt;&lt;option value="ERTLFUNCTIONALFRAGMENTSPSEUDOSMILES"&gt;ERTLFUNCTIONALFRAGMENTSPSEUDOSMILES: Functional groups detected and extracted from organic molecules by Ertl algorithm represented as SMILES pseudo-strings with aromatic atoms marked by an asterisk and pseudo-atoms indicated by R&lt;/option&gt;&lt;option value="FMFDESCRIPTOR"&gt;FMFDESCRIPTOR: FMF descriptor. Approach to characterize the molecular complexity based on the Murcko scaffold present in the molecule. The descriptor is the ratio of the heavy atoms in the scaffold to the total number of heavy atoms in the molecule.&lt;/option&gt;&lt;option value="PUBLISHER"&gt;PUBLISHER: Publisher: the document where the natural product is reported is published&lt;/option&gt;&lt;option value="FRAGMENTS"&gt;FRAGMENTS: List of circular fragments (molecular signatures) of the deglycosylated Natural Product&lt;/option&gt;&lt;option value="FRAGMENTSWITHSUGAR"&gt;FRAGMENTSWITHSUGAR: List of circular fragments (molecular signatures) of the Complete Natural Product&lt;/option&gt;&lt;option value="FSP3"&gt;FSP3: Fraction of sp3 carbon atoms (number of sp3 hybridized carbons/total carbon count)&lt;/option&gt;&lt;option value="FRAGMENTCOMPLEXITYDESCRIPTOR"&gt;FRAGMENTCOMPLEXITYDESCRIPTOR: Fragment Complexity Descriptor. The complexity is defined as C=abs(B^2-A^2+A)+H/100 (where C=complexity, A=number of non-hydrogen atoms, B=number of bonds and H=number of heteroatoms)&lt;/option&gt;&lt;option value="GEOLOCATION"&gt;GEOLOCATION: List of continents and regions where the organism producing the natural product is found&lt;/option&gt;&lt;option value="GRAVITATIONALINDEXHEAVYATOMS"&gt;GRAVITATIONALINDEXHEAVYATOMS: Gravitational index: measure of the spatial distribution of masses in the molecule (only heavy atoms)&lt;/option&gt;&lt;option value="HBONDACCEPTORCOUNT"&gt;HBONDACCEPTORCOUNT: Hydrogen bond acceptor count&lt;/option&gt;&lt;option value="HBONDDONORCOUNT"&gt;HBONDDONORCOUNT: Hydrogen bond donor count&lt;/option&gt;&lt;option value="HYBRIDIZATIONRATIODESCRIPTOR"&gt;HYBRIDIZATIONRATIODESCRIPTOR: Hybridization Ratio Descriptor (fraction of sp3 carbons to sp2 carbons)&lt;/option&gt;&lt;option value="KAPPASHAPEINDEX1"&gt;KAPPASHAPEINDEX1: First kappa shape index&lt;/option&gt;&lt;option value="KAPPASHAPEINDEX2"&gt;KAPPASHAPEINDEX2: Second kappa shape index&lt;/option&gt;&lt;option value="KAPPASHAPEINDEX3"&gt;KAPPASHAPEINDEX3: Third kappa shape index&lt;/option&gt;&lt;option value="PETITJEANNUMBER"&gt;PETITJEANNUMBER: Petitjean Number of a Molecule: the eccentricity of a vertex corresponds to the distance from that vertex to the most remote vertex in the graph.&lt;/option&gt;&lt;option value="PETITJEANSHAPEGEOM"&gt;PETITJEANSHAPEGEOM: Petitjean Geometric Shape Index. A descriptor that reflects on the shape of the molecular connectivity graph and factors in distance information.&lt;/option&gt;&lt;option value="PETITJEANSHAPETOPO"&gt;PETITJEANSHAPETOPO: Petitjean Topological Shape Index. Un descriptor que refleja la forma topológica del gráfico molecular.&lt;/option&gt;&lt;option value="PUBCHEMFINGERPRINT"&gt;PUBCHEMFINGERPRINT: PubChem fingerprint: contains 881 binary bits that indicate the presence or absence of a certain group of chemical features in a compound.&lt;/option&gt;&lt;option value="LIPINSKIRULEOF5FAILURES"&gt;LIPINSKIRULEOF5FAILURES: Number of failures in the Lipinski rule of 5&lt;/option&gt;&lt;option value="MANHOLDLOGP"&gt;MANHOLDLOGP: LogP descriptor (Mannhold Method)&lt;/option&gt;&lt;option value="NPL_SUGAR_SCORE"&gt;NPL_SUGAR_SCORE: Natural product-likeness score a Bayesian measure which allows for the determination of how molecules are similar to the structural space covered by natural products (glycosylated molecule).&lt;/option&gt;&lt;option value="AROMATIC_ATOM_COUNT"&gt;AROMATIC_ATOM_COUNT: Number of aromatic atoms in a given molecule.&lt;/option&gt;&lt;option value="ATOMIC_POLARIZABILITY"&gt;ATOMIC_POLARIZABILITY: Sum of atomic polarizabilities of all atoms in a given molecule.&lt;/option&gt;&lt;option value="NUMBERSPIROATOMS"&gt;NUMBERSPIROATOMS: Number of spiro atoms. Common atom in a "spiro junction" formed by a single atom that is the only common member of two rings.&lt;/option&gt;&lt;option value="WIENERPATHNUMBER"&gt;WIENERPATHNUMBER: Wiener index. The sum of the lengths of the shortest paths between all pairs of vertices in the chemical graph representing the non-hydrogen atoms in the molecule.&lt;/option&gt;&lt;option value="XLOGP"&gt;XLOGP: XLogP. Prediction of logP based on the atom-type method.&lt;/option&gt;&lt;option value="ZAGREBINDEX"&gt;ZAGREBINDEX: Zagreb Index. The sum of squares of all heavy atom degrees.&lt;/option&gt;&lt;option value="TOPOPSA"&gt;TOPOPSA: Topological polar surface area descriptor&lt;/option&gt;&lt;option value="TAXID"&gt;TAXID: List of NCBI taxonomy identifiers of organisms producing the natural product&lt;/option&gt;&lt;option value="PT_ION"&gt;PT_ION: Ionization Potential: Propensity of a given molecule to lose an electron.&lt;/option&gt;&lt;option value="LARGESTCHAIN"&gt;LARGESTCHAIN: Largest Chain Descriptor&lt;/option&gt;&lt;option value="VABCDESCRIPTOR"&gt;VABCDESCRIPTOR: Volumen descriptor: shows the values derived from the van der Waals Volume as a Sum of Atomic and Bond Contributions method that is based on group contributions.&lt;/option&gt;&lt;option value="VERTEXADJMAGNITUDE"&gt;VERTEXADJMAGNITUDE: Vertex adjacency information (magnitude): 1+logm2 where m is the number of heavy-heavy bonds&lt;/option&gt;&lt;option value="CONTAINS_LINEAR_SUGARS"&gt;CONTAINS_LINEAR_SUGARS: Presence of linear sugars in the natural product&lt;/option&gt;&lt;option value="CONTAINS_RING_SUGARS"&gt;CONTAINS_RING_SUGARS: Presence of ring sugars in the natural product&lt;/option&gt;&lt;option value="CONTAINS_SUGAR"&gt;CONTAINS_SUGAR: Presence of sugar fractions in the natural product&lt;/option&gt;&lt;option value="SPECTRUM"&gt;SPECTRUM: Spectroscopy: It has Spectroscopic information&lt;/option&gt;&lt;option value="DATA_13C"&gt;DATA_13C: NRM 13C Spectrum &lt;/option&gt;&lt;option value="DATA_15N"&gt;DATA_15N: NRM 15N Spectrum &lt;/option&gt;&lt;option value="DATA_19_F"&gt;DATA_19_F: NRM 19F Spectrum &lt;/option&gt;&lt;option value="DATA_1H"&gt;DATA_1H: NRM 1H Spectrum &lt;/option&gt;&lt;option value="DATA_29_SI"&gt;DATA_29_SI: NRM 29Si Spectrum &lt;/option&gt;&lt;option value="DATA_31P"&gt;DATA_31P: NRM 31P Spectrum &lt;/option&gt;&lt;option value="DATA_CURVE"&gt;DATA_CURVE: Spectrophotometric curve&lt;/option&gt;&lt;option value="DATA_FIR"&gt;DATA_FIR: IR spectrum&lt;/option&gt;&lt;option value="DATA_GC"&gt;DATA_GC: Gas chromatogram&lt;/option&gt;&lt;option value="DATA_HPLC"&gt;DATA_HPLC: HPLC/UPLC chromatogram&lt;/option&gt;&lt;option value="DATA_MASS"&gt;DATA_MASS: Mass spectrum&lt;/option&gt;&lt;option value="DATA_OTHER"&gt;DATA_OTHER: Other spectrum/analysis&lt;/option&gt;&lt;option value="DATA_XRAY"&gt;DATA_XRAY: Xray spectrum&lt;/option&gt;&lt;option value="TOX"&gt;TOX: Toxicology descriptor 1&lt;/option&gt;&lt;option value="TOX_2"&gt;TOX_2: Toxicology descriptor 2&lt;/option&gt;&lt;option value="TOX_3"&gt;TOX_3: Toxicology descriptor 3&lt;/option&gt; &lt;/select&gt;&lt;span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"&gt;&lt;span class="selection"&gt;&lt;span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-campoBusqueda-container"&gt;&lt;span class="select2-selection__rendered" id="select2-campoBusqueda-container" title="STRUCTURE_SMILES: Chemical substance identifier: SMILES online notation"&gt;STRUCTURE_SMILES: Chemical substance identifier: SMILES online notation&lt;/span&gt;&lt;span class="select2-selection__arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="dropdown-wrapper" aria-hidden="true"&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;&lt;span id="criteriosBusqueda"&gt;<br/>
+                 &lt;div class="form-group row"&gt;<br/>
+                  &lt;label class="col-form-label col-md-3 col-sm-3 "&gt;Search operator: &lt;/label&gt;<br/>
+                  &lt;div class="col-md-9 col-sm-9 "&gt;<br/>
+                   &lt;select required id="SelectCampoBusqueda" name="SelectCampoBusqueda" class="js-example-basic-single form-control"&gt; &lt;option value=""&gt;Please choose an operator to manage your search&lt;/option&gt; &lt;option value="LIKE"&gt;Same as the following words:&lt;/option&gt; &lt;option value="%LIKE%"&gt;Containing the following words:&lt;/option&gt; &lt;option value="NOT LIKE"&gt;NOT containing the following words:&lt;/option&gt; &lt;/select&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="form-group row"&gt;&lt;label class="col-form-label col-md-3 col-sm-3 "&gt;Text:&lt;/label&gt;<br/>
+                  &lt;div class="col-md-9 col-sm-9 "&gt;&lt;textarea id="ClavesBusqueda" required class="form-control" placeholder="Type the keywords"&gt;&lt;/textarea&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="ln_solid"&gt;&lt;/div&gt;<br/>
+                 &lt;div class="form-group row"&gt;<br/>
+                  &lt;div class="col-md-9 col-sm-9  offset-md-3"&gt;&lt;button class="btn btn-primary" type="reset"&gt;Clean Fields&lt;/button&gt; &lt;button type="button" onclick="busquedaEspecifica()" class="btn btn-success"&gt;Consult&lt;/button&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;&lt;/span&gt; &lt;span id="SearchResult"&gt;&lt;/span&gt;<br/>
+               &lt;/form&gt;<br/>
+              &lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="item form-group"&gt;<br/>
+           &lt;div class="col-md-6 col-sm-6 offset-md-0"&gt;&lt;a href="" class="btn btn-secondary style=" background:#1bb1dc;border:="" none;=""&gt;&lt;i class="fa fa-arrow-left"&gt;&lt;/i&gt; &lt;span&gt;Back&lt;/span&gt;&lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;&lt;!-- /page content --&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;&lt;script&gt;<br/>
+/// Ordenar una datatable por una columna determinada.<br/>
+<br/>
+function obtenerOperador(NombreCampo){<br/>
+	realizaProceso('Null','Null','../../../vista/moleculas/reportes/criteria.search.specific.moleculas.view.vista.php',NombreCampo,'criteriosBusqueda');<br/>
+<br/>
+}<br/>
+<br/>
+<br/>
+function mostrarMensaje(mensaje){<br/>
+	var msj = mensaje.split('&');<br/>
+	msj='&lt;b&gt;Descriptor del Campo.&lt;/b&gt;&lt;hr&gt;&lt;p class="text-justify small"&gt;&lt;img src="../../../recursos/images/espana.png"&gt;&lt;/img&gt; &nbsp; '+msj[0]+'&lt;br&gt; &lt;img src="../../../recursos/images/eeuu.png"&gt;&lt;/img&gt; &nbsp; '+msj[1]+'&lt;/p&gt;';<br/>
+<br/>
+	Swal.fire({<br/>
+		<br/>
+		html: msj,<br/>
+		showConfirmButton: false,<br/>
+		showCloseButton: true,<br/>
+	});<br/>
+	<br/>
+}<br/>
+function busquedaEspecifica(){<br/>
+	var CampoElegido=document.getElementById('campoBusqueda').value;<br/>
+	var OperadorBusqueda=document.getElementById('SelectCampoBusqueda').value;<br/>
+	var ClavesBusqueda=document.getElementById('ClavesBusqueda').value;<br/>
+<br/>
+	if(CampoElegido==""||OperadorBusqueda==""||ClavesBusqueda==""){<br/>
+		Swal.fire({<br/>
+			  html: "&lt;h5&gt;Por favor revisar que haya llenado todos los campos.&lt;h5&gt;",<br/>
+			});	<br/>
+	} else{<br/>
+		realizaProceso(CampoElegido,OperadorBusqueda,'../../../vista/moleculas/reportes/result.advanced.moleculas.view.vista.php',ClavesBusqueda,'SearchResult');<br/>
+	} <br/>
+}<br/>
+ <br/>
+<br/>
+  <br/>
+  	$(document).ready(function() {<br/>
+		$('.js-example-basic-single').select2();<br/>
+	});<br/>
+  <br/>
+&lt;/script&gt;&lt;/span&gt;<br/>
+     &lt;/div&gt;&lt;!--<br/>
+        &lt;div class="col-md-6 intro-img order-md-last order-first"&gt;<br/>
+          &lt;img src="img/intro-img.svg" alt="" class="img-fluid"&gt;<br/>
+        &lt;/div&gt;<br/>
+		--&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/section&gt;&lt;!-- #intro --&gt;<br/>
+  &lt;main id="main"&gt;&lt;!--==========================<br/>
+      Common compounds Section<br/>
+    ============================--&gt; &lt;br&gt;&lt;br&gt;<br/>
+   &lt;section id="pricing" class="wow fadeInUp section-bg" style="visibility: visible; animation-name: fadeInUp;"&gt;<br/>
+    &lt;div class="container"&gt;<br/>
+     &lt;header class="section-header"&gt;<br/>
+      &lt;h3&gt;Common Natural Products&lt;/h3&gt;<br/>
+     &lt;/header&gt;<br/>
+     &lt;div class="row flex-items-xs-middle flex-items-xs-center"&gt;<br/>
+      &lt;div class="cards-wrapper"&gt;<br/>
+       &lt;div class="cards-container"&gt;&lt;!-- Common natural products  --&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_164.png" alt="Roburin"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;82&lt;/sub&gt;H&lt;sub&gt;50&lt;/sub&gt;O&lt;sub&gt;51&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;Roburin D&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=164" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_234.png" alt="adrenaline"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;19&lt;/sub&gt;H&lt;sub&gt;19&lt;/sub&gt;N&lt;sub&gt;7&lt;/sub&gt;O&lt;sub&gt;6&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;Folcidin&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=234" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_10.png" alt="B-pinene"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;10&lt;/sub&gt;H&lt;sub&gt;16&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;Beta-pinene&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=10" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;!-- Repetir el bloque anterior para cada card --&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_1.png" alt="(+/-)-Cannabidiol"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;21&lt;/sub&gt;H&lt;sub&gt;30&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;(+/-)-Cannabidiol&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=1" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;!-- Añade aquí las demás cards de la misma forma --&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_102.png" alt="Elemene"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;15&lt;/sub&gt;H&lt;sub&gt;24&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;Elemene&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=102" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_133.png" alt="Limonene"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;10&lt;/sub&gt;H&lt;sub&gt;16&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;D-Limonene&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=133" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_30.png" alt="Margaric acid"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;17&lt;/sub&gt;H&lt;sub&gt;34&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;Margaric acid&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=30" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_39.png" alt="Scopolamine"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;17&lt;/sub&gt;H&lt;sub&gt;21&lt;/sub&gt;NO&lt;sub&gt;4&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;(-)-Scopolamine&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=39" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="col-xs-12 col-lg-3"&gt;<br/>
+         &lt;div class="card"&gt;<br/>
+          &lt;div class="card-header"&gt;&lt;img src="img/NPDBEjeCol_86.png" alt="Methylbenzoate"&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="card-block"&gt;<br/>
+           &lt;h4 class="card-title"&gt;C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;8&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;&lt;/h4&gt;<br/>
+           &lt;ul class="list-group"&gt;<br/>
+            &lt;li class="list-group-item"&gt;Methylbenzoate&lt;/li&gt;<br/>
+           &lt;/ul&gt;&lt;a href="https://npdbejecol.com/vista/moleculas/moleculas/moleculas.show.result.vista.php?Id=86" class="btn"&gt;Details&lt;/a&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/section&gt;&lt;!-- #common compounds --&gt;<br/>
+   &lt;style&gt;<br/>
+  .cards-wrapper {<br/>
+    overflow: hidden; /* Oculta cualquier contenido desbordado */<br/>
+  }<br/>
+<br/>
+  .cards-container {<br/>
+    display: flex;<br/>
+    gap: 10px; /* Espacio entre cards */<br/>
+    padding: 10px;<br/>
+    animation: scroll 30s linear infinite; /* Duración de la animación incrementada a 30s */<br/>
+  }<br/>
+<br/>
+  @keyframes scroll {<br/>
+    0% {<br/>
+      transform: translateX(0%);<br/>
+    }<br/>
+    100% {<br/>
+      transform: translateX(-100%);<br/>
+    }<br/>
+  }<br/>
+<br/>
+  .cards-container:hover {<br/>
+    animation-play-state: paused; /* Detiene la animación cuando el cursor está sobre el contenedor */<br/>
+  }<br/>
+<br/>
+  .cards-container .card {<br/>
+    min-width: 250px; <br/>
+    width: 250px; /* Fija la anchura de las cards */<br/>
+    height: 350px; /* Fija la altura de las cards */<br/>
+    display: flex;<br/>
+    flex-direction: column;<br/>
+    justify-content: space-between;<br/>
+  }<br/>
+<br/>
+  .card-header {<br/>
+    height: 150px; /* Altura fija para la cabecera de la card */<br/>
+  }<br/>
+<br/>
+  .card-header img {<br/>
+    width: 100%;<br/>
+    height: 100%;<br/>
+    object-fit: cover; /* Asegura que la imagen cubra el área */<br/>
+  }<br/>
+<br/>
+  .card-block {<br/>
+    flex: 1;<br/>
+    display: flex;<br/>
+    flex-direction: column;<br/>
+    justify-content: space-between;<br/>
+  }<br/>
+<br/>
+  .card-title {<br/>
+    margin-top: 10px;<br/>
+    margin-bottom: 10px;<br/>
+    text-align: center;<br/>
+  }<br/>
+<br/>
+  .list-group {<br/>
+    margin-bottom: 10px;<br/>
+  }<br/>
+<br/>
+  .list-group-item {<br/>
+    text-align: center;<br/>
+  }<br/>
+<br/>
+  .btn {<br/>
+    align-self: center; /* Centra el botón horizontalmente */<br/>
+    margin-bottom: 10px;<br/>
+  }<br/>
+&lt;/style&gt;&lt;!------ data section -----------&gt;<br/>
+   &lt;section id="data"&gt;<br/>
+    &lt;div class="container mt-5" style="background-color: aliceblue; box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); margin-bottom:5%;"&gt;<br/>
+     &lt;div class="row justify-content-center"&gt;<br/>
+      &lt;div class="col-md-8 text-center"&gt;<br/>
+       &lt;div class="number-highlight"&gt;&lt;span class="big-number"&gt;230+&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;p&gt;The database for NPDBEjeCol was based on latest dataset release (april, 2024), which comprises a more than 230 compounds compound, representing the biodiversity of the Colombian coffee region.&lt;/p&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;!--==========================<br/>
+      About Us Section<br/>
+    ============================--&gt;<br/>
+    &lt;section id="about"&gt;<br/>
+     &lt;div style="box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); padding:10px; margin-top:5%; margin-bottom:5%"&gt;<br/>
+      &lt;div class="row"&gt;<br/>
+       &lt;div class="col-lg-5 col-md-6"&gt;<br/>
+        &lt;div class="about-img"&gt;&lt;img src="img/Imagen1.png" alt=""&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-lg-7 col-md-6"&gt;<br/>
+        &lt;div class="about-content"&gt;<br/>
+         &lt;h2&gt;About the Project&lt;/h2&gt;<br/>
+         &lt;p&gt;NPDBEjeCol is proposed as a web-based database, offering an array of advanced search, filtering, and download capabilities to enhance the existing natural products derived from plants, particularly from the Coffee Region in Colombia.&lt;/p&gt;<br/>
+         &lt;p&gt;&lt;/p&gt;This initiative aims to accelerate research efforts and streamline the dissemination of knowledge in the field of natural product discovery in Colombia. Also it aims to establish itself as a leading platform for showcasing the abundant natural diversity found in the country.<br/>
+         &lt;p&gt;&lt;/p&gt;<br/>
+         &lt;div class="row justify-content-center"&gt;<br/>
+          &lt;div class="col-md-3 mb-3"&gt;<br/>
+           &lt;div class="custom-card text-center"&gt;&lt;img src="img/Logo_U.T.P.png" class="card-img mx-auto d-block" alt="LogoUTP"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="col-md-3 mb-3"&gt;<br/>
+           &lt;div class="custom-card text-center"&gt;&lt;img src="img/logo GIFAMOL-02.jpg" class="card-img mx-auto d-block" alt="LogoGIFAMOL"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div class="container"&gt;<br/>
+           &lt;div class="row justify-content-center"&gt;<br/>
+            &lt;div class="col-md-12 text-center"&gt;<br/>
+             &lt;h3&gt;Leading research group. Pereira, Colombia&lt;/h3&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/section&gt;&lt;!--==========================<br/>
+      Team Section<br/>
+    ============================--&gt;<br/>
+    &lt;section id="team" class="section-bg"&gt;<br/>
+     &lt;div class="container"&gt;<br/>
+      &lt;div class="section-header"&gt;<br/>
+       &lt;h3&gt;Team&lt;/h3&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="row"&gt;<br/>
+       &lt;div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"&gt;<br/>
+        &lt;div class="member" style="height: 86.5%;"&gt;&lt;img src="img/Johny Rodriguez.jpg" class="img-fluid" alt=""&gt;<br/>
+         &lt;div class="member-info"&gt;<br/>
+          &lt;div class="member-info-content"&gt;<br/>
+           &lt;h4&gt;Johny Rodríguez Perez&lt;/h4&gt;&lt;span&gt;Research Leader&lt;/span&gt;<br/>
+           &lt;div class="social"&gt;&lt;a href="https://scholar.google.es/citations?user=y5hrP5gAAAAJ&amp;hl=es" target="_blank"&gt;&lt;i class="fa fa-graduation-cap"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href="https://www.researchgate.net/profile/Johny-Rodriguez-Perez" target="_blank"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;"&gt;<br/>
+        &lt;div class="member"&gt;&lt;img src="img/Hector Cortes.jpeg" class="img-fluid" alt=""&gt;<br/>
+         &lt;div class="member-info"&gt;<br/>
+          &lt;div class="member-info-content"&gt;<br/>
+           &lt;h4&gt;Hector Cortes Hernández&lt;/h4&gt;&lt;span&gt;Researcher&lt;/span&gt;<br/>
+           &lt;div class="social"&gt;&lt;a href="https://scholar.google.com/citations?user=qCv7YOAAAAAJ&amp;hl=es" target="_blank"&gt;&lt;i class="fa fa-graduation-cap"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href="https://www.researchgate.net/profile/Hector-Cortes-Hernandez" target="_blank"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;"&gt;<br/>
+        &lt;div class="member"&gt;&lt;img src="img/Hoover Valencia.jpeg" class="img-fluid" alt=""&gt;<br/>
+         &lt;div class="member-info"&gt;<br/>
+          &lt;div class="member-info-content"&gt;<br/>
+           &lt;h4&gt;Hoover Valencia Sánchez&lt;/h4&gt;&lt;span&gt;Researcher&lt;/span&gt;<br/>
+           &lt;div class="social"&gt;&lt;a href="https://scholar.google.es/citations?user=or9Vpo0AAAAJ&amp;hl=es" target="_blank"&gt;&lt;i class="fa fa-graduation-cap"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href="https://www.researchgate.net/profile/Hoover-Valencia" target="_blank"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: hidden; animation-delay: 0.3s; animation-name: none;"&gt;<br/>
+        &lt;div class="member"&gt;&lt;img src="img/Oscar Marino.jpeg" class="img-fluid" alt=""&gt;<br/>
+         &lt;div class="member-info"&gt;<br/>
+          &lt;div class="member-info-content"&gt;<br/>
+           &lt;h4&gt;Oscar Mosquera Martinez&lt;/h4&gt;&lt;span&gt;Researcher&lt;/span&gt;<br/>
+           &lt;div class="social"&gt;&lt;a href="https://scholar.google.com/citations?user=yBdC6pkAAAAJ&amp;hl=es" target="_blank"&gt;&lt;i class="fa fa-graduation-cap"&gt;&lt;/i&gt;&lt;/a&gt; &lt;a href="https://www.researchgate.net/profile/Oscar-Mosquera" target="_blank"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/section&gt;&lt;!-- #team --&gt; &lt;!--==========================<br/>
+      Clients Section<br/>
+    ============================--&gt;<br/>
+    &lt;section id="clients" class="wow fadeInUp" style="visibility: hidden; animation-name: none;"&gt;<br/>
+     &lt;div class="container"&gt;<br/>
+      &lt;header class="section-header"&gt;<br/>
+       &lt;h3&gt;Our Allies&lt;/h3&gt;<br/>
+      &lt;/header&gt;<br/>
+      &lt;div class="owl-carousel.clients-carousel" style="display: ruby-text;"&gt;<br/>
+       &lt;header class="section-header"&gt;<br/>
+        &lt;h2&gt;Universities&lt;/h2&gt;<br/>
+       &lt;/header&gt;&lt;img src="img/U Caldas.png" alt=""&gt; &lt;img src="img/Uniqlog.png" alt=""&gt;<br/>
+       &lt;header class="section-header"&gt;<br/>
+        &lt;h2&gt;Research Groups&lt;/h2&gt;<br/>
+       &lt;/header&gt;&lt;img src="img/Difacquim.jpg" alt=""&gt; &lt;img src="img/GBPN_color-1-1.png" alt=""&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/section&gt;&lt;!-- #clients --&gt; &lt;br&gt;&lt;br&gt;&lt;!--==========================<br/>
+  Documentation Section<br/>
+============================--&gt;<br/>
+    &lt;section id="documentation" class="wow fadeInUp section-bg" style="visibility: hidden; animation-name: none;"&gt;<br/>
+     &lt;div class="container"&gt;<br/>
+      &lt;header class="section-header"&gt;<br/>
+       &lt;h3&gt;Documentation&lt;/h3&gt;<br/>
+      &lt;/header&gt;<br/>
+      &lt;div class="row justify-content-center"&gt;<br/>
+       &lt;div class="col-md-8"&gt;<br/>
+        &lt;div class="card"&gt;<br/>
+         &lt;div class="card-body"&gt;&lt;strong&gt;&lt;h4&gt;Dataset&lt;/h4&gt;&lt;/strong&gt;<br/>
+          &lt;p&gt;The database for NPDBEjeCol is based on the latest dataset release (2024), which includes more than 230 compounds of natural products derived from plants of the Colombian coffee region.&lt;/p&gt;<br/>
+          &lt;center&gt;<br/>
+           &lt;a href="NPDBEjeCol.csv" class="btn btn-primary"&gt;Download Dataset&lt;/a&gt;<br/>
+          &lt;/center&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/section&gt;<br/>
+   &lt;/section&gt;<br/>
+  &lt;/main&gt;&lt;!--==========================<br/>
+    Footer<br/>
+  ============================--&gt;<br/>
+  &lt;footer id="footer" class="section-bg"&gt;<br/>
+   &lt;div class="footer-top"&gt;<br/>
+    &lt;div class="container"&gt;<br/>
+     &lt;div class="row"&gt;<br/>
+      &lt;div class="col-lg-6"&gt;<br/>
+       &lt;div class="row"&gt;<br/>
+        &lt;div class="col-sm-12"&gt;<br/>
+         &lt;div class="footer-info"&gt;<br/>
+          &lt;h3&gt;NPDBEjeCol&lt;/h3&gt;<br/>
+          &lt;p&gt;NPDBEjeCol is proposed as a web-based database, offering an array of advanced search, filtering, and download capabilities to enhance the existing natural products derived from plants, particularly from the Coffee Region in Colombia. This initiative aims to accelerate research efforts and streamline the dissemination of knowledge in the field of natural product discovery in Colombia. Also it aims to establish itself as a leading platform for showcasing the abundant natural diversity found in the country.&lt;/p&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="footer-links"&gt;<br/>
+          &lt;h4&gt;Contact Us&lt;/h4&gt;<br/>
+          &lt;p&gt;Universidad Tecnológica de Pereira &lt;br&gt;<br/>
+            Pereira, Colombia&lt;br&gt;&lt;!--&lt;strong&gt;Phone:&lt;/strong&gt; +1 5589 55488 55&lt;br&gt;--&gt; &lt;strong&gt;Email:&lt;/strong&gt; johny.rodriguez@utp.edu.co&lt;br&gt;&lt;/p&gt;<br/>
+         &lt;/div&gt;&lt;!--&lt;div class="social-links"&gt;<br/>
+                    &lt;a href="#" class="twitter"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+                    &lt;a href="#" class="facebook"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+                    &lt;a href="#" class="instagram"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+                    &lt;a href="#" class="linkedin"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+                  &lt;/div&gt;--&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="col-lg-6"&gt;<br/>
+       &lt;div class="form"&gt;<br/>
+        &lt;h4&gt;Send us a message&lt;/h4&gt;<br/>
+        &lt;p&gt;Welcome to the inquiry form about our project. We are here to answer any questions. We will contact you as soon as possible to offer the help you need.&lt;/p&gt;&lt;!--&lt;form action="send.php" method="POST"&gt;<br/>
+                    &lt;div class="mb-3"&gt;<br/>
+                        &lt;label for="fullname"&gt;Full Name&lt;/label&gt;<br/>
+                        &lt;input type="text" name="full_name" id="fullname" required class="form-control" /&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="mb-3"&gt;<br/>
+                        &lt;label for="email_address"&gt;Email Address&lt;/label&gt;<br/>
+                        &lt;input type="email" name="email" id="email_address" required class="form-control" /&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="mb-3"&gt;<br/>
+                        &lt;label for="subject"&gt;Subject&lt;/label&gt;<br/>
+                        &lt;input type="text" name="subject" id="subject" required class="form-control" /&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="mb-3"&gt;<br/>
+                        &lt;label for="message"&gt;Message&lt;/label&gt;<br/>
+                        &lt;textarea name="message" id="message" required class="form-control" rows="3"&gt;&lt;/textarea&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="mb-3"&gt;<br/>
+                        &lt;button type="submit" name="submitContact" class="btn btn-primary"&gt;Send Mail&lt;/button&gt;<br/>
+                    &lt;/div&gt;<br/>
+                &lt;/form&gt;<br/>
+                &lt;div id="mensajeRespuesta"&gt;&lt;/div&gt;--&gt;<br/>
+        &lt;form id="contactForm"&gt;<br/>
+         &lt;div class="mb-3"&gt;&lt;label for="fullname"&gt;Full Name&lt;/label&gt; &lt;input type="text" name="full_name" id="fullname" required class="form-control"&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="mb-3"&gt;&lt;label for="email_address"&gt;Email Address&lt;/label&gt; &lt;input type="email" name="email" id="email_address" required class="form-control"&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="mb-3"&gt;&lt;label for="subject"&gt;Subject&lt;/label&gt; &lt;input type="text" name="subject" id="subject" required class="form-control"&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="mb-3"&gt;&lt;label for="message"&gt;Message&lt;/label&gt; &lt;textarea name="message" id="message" required class="form-control" rows="3"&gt;&lt;/textarea&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="mb-3"&gt;&lt;button type="submit" name="submitContact" class="btn btn-primary"&gt;Send Mail&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/form&gt;<br/>
+        &lt;div id="mensajeRespuesta"&gt;&lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="container"&gt;<br/>
+    &lt;div class="copyright"&gt;<br/>
+     © Copyright &lt;strong&gt;NPDBEjecol&lt;/strong&gt;. All Rights Reserved<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/footer&gt;&lt;!-- #footer --&gt; &lt;a href="#" class="back-to-top"&gt;&lt;i class="fa fa-chevron-up"&gt;&lt;/i&gt;&lt;/a&gt; &lt;!-- Uncomment below i you want to use a preloader --&gt; &lt;!-- &lt;div id="preloader"&gt;&lt;/div&gt; --&gt; &lt;!-- JavaScript Libraries --&gt;<br/>
+  &lt;script src="lib/jquery/jquery.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/jquery/jquery-migrate.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/bootstrap/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/easing/easing.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/mobile-nav/mobile-nav.js"&gt;&lt;/script&gt;<br/>
+  &lt;nav class="mobile-nav d-lg-none"&gt;<br/>
+   &lt;ul&gt;<br/>
+    &lt;li class="active"&gt;&lt;a href="#intro"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;&lt;a href="#about"&gt;About The Project&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;&lt;a href="#team"&gt;Team&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;&lt;a href="#documentation"&gt;Documentation&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;&lt;a href="#footer"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;&lt;a href="https://npdbejecol.com/vista/seguridad/login/login.vista.php"&gt;Login&lt;/a&gt;&lt;/li&gt;<br/>
+   &lt;/ul&gt;<br/>
+  &lt;/nav&gt;<br/>
+  &lt;div class="mobile-nav-overly"&gt;&lt;/div&gt;<br/>
+  &lt;script src="lib/wow/wow.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/waypoints/waypoints.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/counterup/counterup.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/owlcarousel/owl.carousel.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/isotope/isotope.pkgd.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="lib/lightbox/js/lightbox.min.js"&gt;&lt;/script&gt;&lt;!-- Contact Form JavaScript File --&gt;<br/>
+  &lt;script src="contactform/contactform.js"&gt;&lt;/script&gt;&lt;!-------------------------------&gt; &lt;!--&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;<br/>
+    &lt;script&gt;<br/>
+    $(document).ready(function() {<br/>
+        $('#contactForm').on('submit', function(e) {<br/>
+            e.preventDefault();<br/>
+            $.ajax({<br/>
+                type: 'POST',<br/>
+                url: 'send.php',  // URL vacía para enviar al mismo archivo<br/>
+                data: $(this).serialize(),<br/>
+                success: function(response) {<br/>
+                    $('#mensajeRespuesta').html('&lt;div class="alert alert-info"&gt;' + response + '&lt;/div&gt;');<br/>
+                    $('#contactForm')[0].reset();<br/>
+                },<br/>
+                error: function() {<br/>
+                    $('#mensajeRespuesta').html('&lt;div class="alert alert-danger"&gt;Hubo un error al procesar el formulario.&lt;/div&gt;');<br/>
+                }<br/>
+            });<br/>
+        });<br/>
+    });<br/>
+    &lt;/script&gt;--&gt;<br/>
+  &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+$(document).ready(function() {<br/>
+    $('#contactForm').on('submit', function(e) {<br/>
+        e.preventDefault();<br/>
+        $.ajax({<br/>
+            type: 'POST',<br/>
+            url: 'send.php',<br/>
+            data: $(this).serialize(),<br/>
+            success: function(response) {<br/>
+                <br/>
+                    Swal.fire({<br/>
+                        icon: 'success',<br/>
+                        title: '¡Success!',<br/>
+                        text: response.message,<br/>
+                        confirmButtonColor: '#3085d6'<br/>
+                    });<br/>
+                    $('#contactForm')[0].reset();<br/>
+            <br/>
+                //$('#mensajeRespuesta').html(response);<br/>
+                //$('#contactForm')[0].reset();<br/>
+            },<br/>
+            error: function() {<br/>
+               <br/>
+                    Swal.fire({<br/>
+                        icon: 'error',<br/>
+                        title: 'Oops...There was a mistake, try again',<br/>
+                        text: response.message,<br/>
+                        confirmButtonColor: '#d33'<br/>
+                    });<br/>
+                <br/>
+                //$('#mensajeRespuesta').html('Hubo un error al enviar el mensaje.');<br/>
+            }<br/>
+        });<br/>
+    });<br/>
+});<br/>
+&lt;/script&gt;&lt;!------------------------------&gt; &lt;!-- Template Main Javascript File --&gt;<br/>
+  &lt;script src="js/main.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/JSME_2023-07-31/jsme/jsme.nocache.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/fastclick/lib/fastclick.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/nprogress/nprogress.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/Chart.js/dist/Chart.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/gauge.js/dist/gauge.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/iCheck/icheck.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/skycons/skycons.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/Flot/jquery.flot.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/Flot/jquery.flot.pie.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/Flot/jquery.flot.time.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/Flot/jquery.flot.stack.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/Flot/jquery.flot.resize.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/flot.orderbars/js/jquery.flot.orderBars.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/flot-spline/js/jquery.flot.spline.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/flot.curvedlines/curvedLines.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/DateJS/build/date.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jqvmap/dist/jquery.vmap.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jqvmap/dist/maps/jquery.vmap.world.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/moment/min/moment.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/bootstrap-daterangepicker/daterangepicker.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/build/js/custom.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jquery.hotkeys/jquery.hotkeys.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jquery.tagsinput/src/jquery.tagsinput.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/switchery/dist/switchery.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/google-code-prettify/src/prettify.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/select2/dist/js/select2.full.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/autosize/dist/autosize.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/starrr/dist/starrr.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net/js/jquery.dataTables.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-buttons/js/buttons.flash.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-buttons/js/buttons.html5.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-buttons/js/buttons.print.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/jszip/dist/jszip.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/pdfmake/build/pdfmake.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/pdfmake/build/vfs_fonts.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/sweetalert/package/dist/sweetalert2.all.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/sweetalert/package/dist/sweetalert2.all.min.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/owner/confirmDelete.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/owner/ajax.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="../../../recursos/vendors/validator/validatePresentFieldValue.js"&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;<br/>
+/// Ordenar una datatable por una columna determinada.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+function mostrarMensaje(mensaje){<br/>
+	var msj = mensaje.split('&');<br/>
+	msj='&lt;b&gt;Descriptor del Campo.&lt;/b&gt;&lt;hr&gt;&lt;p class="text-justify small"&gt;&lt;img src="../../../recursos/images/espana.png"&gt;&lt;/img&gt; &nbsp; '+msj[0]+'&lt;br&gt; &lt;img src="../../../recursos/images/eeuu.png"&gt;&lt;/img&gt; &nbsp; '+msj[1]+'&lt;/p&gt;';<br/>
+<br/>
+	Swal.fire({<br/>
+		<br/>
+		html: msj,<br/>
+		showConfirmButton: false,<br/>
+		showCloseButton: true,<br/>
+	});<br/>
+	<br/>
+}<br/>
+function busquedaUniversal(Claves){<br/>
+	<br/>
+	if(Claves==""){<br/>
+		Swal.fire({<br/>
+			  html: "&lt;h5&gt;Por favor introduzca algunas palabras claves en el cuadro de búsqueda.&lt;h5&gt;",<br/>
+			});<br/>
+	} else{<br/>
+		realizaProceso('Null','LandingPage','../../../vista/moleculas/reportes/result.moleculas.view.vista.php',Claves,'msjResult');<br/>
+	}<br/>
+}<br/>
+<br/>
+function busquedaSmiles(){<br/>
+		realizaProceso('Null','Null','../../../vista/moleculas/reportes/JSME.moleculas.view.vista.php','Null','msjResult');<br/>
+	}<br/>
+	<br/>
+function busquedaSpecificSearch(){<br/>
+		realizaProceso('Null','Null','../../../vista/moleculas/reportes/find.advanced.moleculas.view.vista.php','Null','msjResult');<br/>
+	}<br/>
+<br/>
+function DetalleMolecula(idMolecula){<br/>
+		realizaProceso(idMolecula,'Null','../../../vista/moleculas/reportes/landing.moleculas.show.result.vista.php','Null','msjResult');<br/>
+	}<br/>
+<br/>
+<br/>
+<br/>
+function onKeyUp(event) {<br/>
+    var keycode = event.keyCode;<br/>
+    if(keycode == '13'){<br/>
+      busquedaUniversal(document.getElementById('claves').value);  <br/>
+    }<br/>
+  }<br/>
+&lt;/script&gt;<br/>
+  &lt;div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"&gt;&lt;/div&gt;<br/>
+  &lt;div id="lightbox" class="lightbox" style="display: none;"&gt;<br/>
+   &lt;div class="lb-outerContainer"&gt;<br/>
+    &lt;div class="lb-container"&gt;<br/>
+     &lt;img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="&gt;<br/>
+     &lt;div class="lb-nav"&gt;<br/>
+      &lt;a class="lb-prev" href=""&gt;&lt;/a&gt;&lt;a class="lb-next" href=""&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="lb-loader"&gt;<br/>
+      &lt;a class="lb-cancel"&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="lb-dataContainer"&gt;<br/>
+    &lt;div class="lb-data"&gt;<br/>
+     &lt;div class="lb-details"&gt;<br/>
+      &lt;span class="lb-caption"&gt;&lt;/span&gt;&lt;span class="lb-number"&gt;&lt;/span&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="lb-closeContainer"&gt;<br/>
+      &lt;a class="lb-close"&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;&lt;iframe src="javascript:&quot;&quot;" id="jsme" tabindex="-1" style="position: absolute; width: 0px; height: 0px; border: none; left: -1000px; top: -1000px;"&gt;&lt;/iframe&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
